@@ -5,6 +5,7 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1")
     //- link(href="images/favicon.ico" rel="shortcut icon")
     meta(charset="UTF-8")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css")
     link(rel="stylesheet", href="stylesheets/all.css")
   body
     header#header
@@ -19,13 +20,203 @@ html
           input(type="text" placeholder="＋ Add Task")
 
         .items
-          .item
-            .titleContent.d-flex.justify-content-between
+
+          .item.add_item
+            .titleContent.d-flex.justify-content-between.align-items-center
               input(type="checkbox" id="todo")
               label(for="todo").title
                 .checked
+                input(type="text" placeholder="Type Something Here…")
+              .event.d-flex
+                a(href="#").star
+                  i.far.fa-star
+                a(href="#").edit
+                  i.far.fa-edit
+            .addContent
+              .deadline
+                .title
+                  i.far.fa-calendar-alt
+                  span Deadline
+                .time
+                  input(type="date" placeholder="yyyy/mm/dd")
+                  input(type="time")
+              .file
+                .title
+                  i.far.fa-file
+                  span File
+                .add_file
+              .comments
+                .title
+                  i.far.fa-comment-dots
+                  span Comments
+                .type_comment
+                  textarea(placeholder="Type your memo here…")
+            .btnContent.d-flex.text-center
+              a(href="#").cancel
+                span Cancel
+              a(href="#").add
+                span Add Task
+
+          .item.important
+            .titleContent.d-flex.justify-content-between.align-items-center
+              input(type="checkbox" id="todo2")
+              label(for="todo2").title
+                .checked
                 span The F2E Week1 - TodoList
-              .event
-                span icons放這
-            .detailContent
+              .event.d-flex
+                a(href="#").star
+                  i.fas.fa-star
+                a(href="#").edit
+                  i.far.fa-edit
+            .detailContent.d-flex
+              .date
+                i.far.fa-calendar-alt
+                span 6/11
+              .file
+                i.far.fa-file
+              .comments
+                i.far.fa-comment-dots
+
           .item
+            .titleContent.d-flex.justify-content-between.align-items-center
+              input(type="checkbox" id="todo3")
+              label(for="todo3").title
+                .checked
+                span The F2E Week2 - ????
+              .event.d-flex
+                a(href="#").star
+                  i.far.fa-star
+                a(href="#").edit
+                  i.far.fa-edit
+            .detailContent.d-flex
+              .date
+                i.far.fa-calendar-alt
+                span 6/18
+              .file
+              .comments
+
+          .item
+            .titleContent.d-flex.justify-content-between.align-items-center
+              input(type="checkbox" id="todo4")
+              label(for="todo4").title
+                .checked
+                span The F2E Week3 - ????
+              .event.d-flex
+                a(href="#").star
+                  i.far.fa-star
+                a(href="#").edit
+                  i.far.fa-edit
+            .detailContent.d-flex
+              .date
+                i.far.fa-calendar-alt
+                span 6/25
+              .file
+              .comments
+
+          .item
+            .titleContent.d-flex.justify-content-between.align-items-center
+              input(type="checkbox" id="todo5")
+              label(for="todo5").title
+                .checked
+                span The F2E Week4 - ????
+              .event.d-flex
+                a(href="#").star
+                  i.far.fa-star
+                a(href="#").edit
+                  i.far.fa-edit
+            .detailContent.d-flex
+              .date
+                i.far.fa-calendar-alt
+                span 7/1
+              .file
+              .comments
+
+          .item
+            .titleContent.d-flex.justify-content-between.align-items-center
+              input(type="checkbox" id="todo6")
+              label(for="todo6").title
+                .checked
+                span The F2E Week5 - ????
+              .event.d-flex
+                a(href="#").star
+                  i.far.fa-star
+                a(href="#").edit
+                  i.far.fa-edit
+            .detailContent.d-flex
+              .date
+                i.far.fa-calendar-alt
+                span 7/8
+              .file
+              .comments
+
+          .item
+            .titleContent.d-flex.justify-content-between.align-items-center
+              input(type="checkbox" id="todo7")
+              label(for="todo7").title
+                .checked
+                span The F2E Week6 - ????
+              .event.d-flex
+                a(href="#").star
+                  i.far.fa-star
+                a(href="#").edit
+                  i.far.fa-edit
+            .detailContent.d-flex
+              .date
+                i.far.fa-calendar-alt
+                span 7/15
+              .file
+              .comments
+
+          .item
+            .titleContent.d-flex.justify-content-between.align-items-center
+              input(type="checkbox" id="todo8")
+              label(for="todo8").title
+                .checked
+                span The F2E Week7 - ????
+              .event.d-flex
+                a(href="#").star
+                  i.far.fa-star
+                a(href="#").edit
+                  i.far.fa-edit
+            .detailContent.d-flex
+              .date
+                i.far.fa-calendar-alt
+                span 7/22
+              .file
+              .comments
+
+          .item
+            .titleContent.d-flex.justify-content-between.align-items-center
+              input(type="checkbox" id="todo9")
+              label(for="todo9").title
+                .checked
+                span The F2E Week8 - ????
+              .event.d-flex
+                a(href="#").star
+                  i.far.fa-star
+                a(href="#").edit
+                  i.far.fa-edit
+            .detailContent.d-flex
+              .date
+                i.far.fa-calendar-alt
+                span 7/29
+              .file
+              .comments
+
+          .item
+            .titleContent.d-flex.justify-content-between.align-items-center
+              input(type="checkbox" id="todo10")
+              label(for="todo10").title
+                .checked
+                span The F2E Week9 - ????
+              .event.d-flex
+                a(href="#").star
+                  i.far.fa-star
+                a(href="#").edit
+                  i.far.fa-edit
+            .detailContent.d-flex
+              .date
+                i.far.fa-calendar-alt
+                span 8/5
+              .file
+              .comments
