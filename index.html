@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TodoList</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheets/all.css">
+  </head>
+  <body>
+    <header id="header">
+      <div class="todo_container d-flex">
+        <div class="col active sort">My Tasks</div>
+        <div class="col sort">In Progress</div>
+        <div class="col sort">Completed</div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="todo_container">
+        <div class="add_todo">
+          <input type="text" placeholder="＋ Add Task">
+        </div>
+        <div class="items">
+          <div class="item">
+            <div class="titleContent d-flex justify-content-between">
+              <input type="checkbox" id="todo">
+              <label for="todo" class="title">
+                <div class="checked"></div><span>The F2E Week1 - TodoList</span>
+              </label>
+              <div class="event"><span>icons放這</span></div>
+            </div>
+            <div class="detailContent"></div>
+          </div>
+          <div class="item"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
