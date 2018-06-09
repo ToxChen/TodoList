@@ -2,6 +2,9 @@
   position: relative;
   box-sizing: border-box; }
 
+a:hover {
+  text-decoration: none; }
+
 ::-webkit-input-placeholder {
   color: #C8C8C8; }
 
@@ -12,13 +15,14 @@
   color: #C8C8C8; }
 
 html, body {
+  margin: 0;
+  padding: 0;
   font-family: Roboto, sans-serif;
   background-color: #E1E1E1; }
 
 .todo_container {
   max-width: 620px;
-  margin: 0 auto;
-  padding: 0 15px; }
+  margin: 0 auto; }
 
 header {
   background-color: #4A90E2; }
@@ -37,41 +41,183 @@ header {
     color: #FFFFFF;
     border-bottom: 5px solid #00408B; }
 
-.content .add_todo input {
-  width: 100%;
-  height: 65px;
-  font-size: 24px;
-  color: #757575;
-  margin: 24px 0;
-  padding-left: 24px;
-  background: #FFFFFF;
-  border: 2px solid #C8C8C8;
-  border-radius: 5px;
-  outline: none; }
-  .content .add_todo input:focus {
-    border: 2px solid #4A90E2; }
+.content .add_todo {
+  margin: 24px 0; }
+  .content .add_todo input[type="text"] {
+    width: 100%;
+    height: 65px;
+    font-size: 24px;
+    color: #757575;
+    padding-left: 24px;
+    background: #FFFFFF;
+    border: 2px solid #C8C8C8;
+    border-radius: 5px;
+    outline: none; }
+    .content .add_todo input[type="text"]:focus {
+      border: 2px solid #4A90E2; }
 
-.content .items .item .titleContent {
+.content .items .item {
   background-color: #F2F2F2;
   margin-bottom: 8px;
-  padding: 32px 24px;
-  border-radius: 5px; }
-  .content .items .item .titleContent input[type="checkbox"] {
-    display: none; }
-  .content .items .item .titleContent input[type="checkbox"], .content .items .item .titleContent label .checked {
-    width: 24px;
-    height: 24px;
-    background-color: #FFFFFF;
-    border: none; }
-  .content .items .item .titleContent input[type="checkbox"]:checked + label .checked {
+  padding: 24px 32px 24px 72px;
+  border-radius: 5px;
+  overflow: hidden; }
+  .content .items .item .titleContent {
+    margin-bottom: 6px; }
+    .content .items .item .titleContent input[type="text"] {
+      background-color: transparent;
+      border: none; }
+      .content .items .item .titleContent input[type="text"]:focus {
+        outline: none; }
+    .content .items .item .titleContent input[type="checkbox"] {
+      display: none; }
+    .content .items .item .titleContent input[type="checkbox"], .content .items .item .titleContent label .checked {
+      width: 24px;
+      height: 24px;
+      background-color: #FFFFFF;
+      border: none; }
+    .content .items .item .titleContent input[type="checkbox"]:checked + label .checked {
+      background-color: #4A90E2; }
+    .content .items .item .titleContent .title {
+      font-size: 24px;
+      font-weight: 500;
+      color: #000000;
+      margin-bottom: 0;
+      cursor: pointer; }
+      .content .items .item .titleContent .title .checked {
+        position: absolute;
+        top: 50%;
+        left: -40px;
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        border-radius: 2px; }
+    .content .items .item .titleContent .event a {
+      color: #000000; }
+    .content .items .item .titleContent .event i {
+      font-size: 24px; }
+    .content .items .item .titleContent .event .star {
+      margin-right: 32px; }
+  .content .items .item .detailContent {
+    color: #757575; }
+    .content .items .item .detailContent .date i {
+      margin-right: 8px; }
+    .content .items .item .detailContent .date, .content .items .item .detailContent .file {
+      margin-right: 16px; }
+  .content .items .item .addContent .title {
+    margin-bottom: 8px; }
+    .content .items .item .addContent .title i {
+      width: 16px;
+      font-size: 16px;
+      margin-right: 8px; }
+    .content .items .item .addContent .title span {
+      font-size: 20px;
+      font-weight: 500;
+      color: #000000; }
+  .content .items .item .addContent .deadline, .content .items .item .addContent .file {
+    margin-bottom: 22px; }
+  .content .items .item .addContent .time, .content .items .item .addContent .add_file, .content .items .item .addContent .type_comment {
+    margin-left: 24px; }
+  .content .items .item .addContent .add_file {
+    width: 32px;
+    height: 32px;
+    background-color: #C8C8C8;
+    border-radius: 2px; }
+    .content .items .item .addContent .add_file:before, .content .items .item .addContent .add_file:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+      background-color: #FFFFFF; }
+    .content .items .item .addContent .add_file:before {
+      width: 10px;
+      height: 2px; }
+    .content .items .item .addContent .add_file:after {
+      width: 2px;
+      height: 10px; }
+  .content .items .item .addContent input {
+    border: none;
+    height: 35px;
+    border-radius: 2px;
+    padding: 0 16px;
+    color: #C8C8C8;
+    border: 1px solid transparent; }
+  .content .items .item .addContent input[type="date"] {
+    margin-right: 8px; }
+  .content .items .item .addContent textarea {
+    width: 100%;
+    height: 120px;
+    padding: 8px 16px;
+    border-radius: 2px;
+    border: none;
+    resize: none;
+    border: 1px solid transparent; }
+  .content .items .item .addContent input:focus, .content .items .item .addContent textarea:focus {
+    border: 1px solid #4A90E2; }
+  .content .items .item .btnContent .cancel, .content .items .item .btnContent .add {
+    width: 50%;
+    height: 60px;
+    font-size: 24px;
+    line-height: 60px; }
+  .content .items .item .btnContent .cancel {
+    color: #D0021B;
+    background-color: #FFFFFF; }
+    .content .items .item .btnContent .cancel span {
+      padding-left: 28px; }
+      .content .items .item .btnContent .cancel span:before, .content .items .item .btnContent .cancel span:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        width: 16px;
+        height: 2px;
+        background-color: #D0021B; }
+      .content .items .item .btnContent .cancel span:before {
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+      .content .items .item .btnContent .cancel span:after {
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+    .content .items .item .btnContent .cancel:hover {
+      background-color: #C8C8C8; }
+  .content .items .item .btnContent .add {
+    color: #FFFFFF;
     background-color: #4A90E2; }
-  .content .items .item .titleContent .title {
-    cursor: pointer; }
-    .content .items .item .titleContent .title .checked, .content .items .item .titleContent .title span {
-      display: inline-block; }
-    .content .items .item .titleContent .title .checked {
-      vertical-align: middle;
-      margin-right: 16px;
-      border-radius: 2px; }
+    .content .items .item .btnContent .add span {
+      padding-left: 28px; }
+      .content .items .item .btnContent .add span:before, .content .items .item .btnContent .add span:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        width: 16px;
+        height: 2px;
+        background-color: #FFFFFF; }
+      .content .items .item .btnContent .add span:before {
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+    .content .items .item .btnContent .add:hover {
+      background-color: #00408B; }
+
+.content .items .item.important {
+  background-color: #FFF2DC; }
+  .content .items .item.important .titleContent .event .star {
+    color: #F5A623; }
+
+.content .items .add_item {
+  margin-bottom: 24px;
+  padding: 0;
+  box-shadow: 0 4px 4px 0 #C8C8C8; }
+  .content .items .add_item .titleContent {
+    padding: 24px 32px 24px 72px;
+    border-bottom: 2px solid #C8C8C8;
+    margin-bottom: 0; }
+  .content .items .add_item .addContent {
+    padding: 24px 78px 24px 72px; }
 
 /*# sourceMappingURL=index.css.map */

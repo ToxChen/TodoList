@@ -4,6 +4,7 @@
     <title>TodoList</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <link rel="stylesheet" href="stylesheets/all.css">
   </head>
   <body>
@@ -20,17 +21,162 @@
           <input type="text" placeholder="＋ Add Task">
         </div>
         <div class="items">
-          <div class="item">
-            <div class="titleContent d-flex justify-content-between">
+          <div class="item add_item">
+            <div class="titleContent d-flex justify-content-between align-items-center">
               <input type="checkbox" id="todo">
               <label for="todo" class="title">
+                <div class="checked"></div>
+                <input type="text" placeholder="Type Something Here…">
+              </label>
+              <div class="event d-flex"><a href="#" class="star"><i class="far fa-star"></i></a><a href="#" class="edit"><i class="far fa-edit"></i></a></div>
+            </div>
+            <div class="addContent">
+              <div class="deadline">
+                <div class="title"><i class="far fa-calendar-alt"></i><span>Deadline</span></div>
+                <div class="time">
+                  <input type="date" placeholder="yyyy/mm/dd">
+                  <input type="time">
+                </div>
+              </div>
+              <div class="file">
+                <div class="title"><i class="far fa-file"></i><span>File</span></div>
+                <div class="add_file"></div>
+              </div>
+              <div class="comments">
+                <div class="title"><i class="far fa-comment-dots"></i><span>Comments</span></div>
+                <div class="type_comment">
+                  <textarea placeholder="Type your memo here…"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="btnContent d-flex text-center"><a href="#" class="cancel"><span>Cancel</span></a><a href="#" class="add"><span>Add Task</span></a></div>
+          </div>
+          <div class="item important">
+            <div class="titleContent d-flex justify-content-between align-items-center">
+              <input type="checkbox" id="todo2">
+              <label for="todo2" class="title">
                 <div class="checked"></div><span>The F2E Week1 - TodoList</span>
               </label>
-              <div class="event"><span>icons放這</span></div>
+              <div class="event d-flex"><a href="#" class="star"><i class="fas fa-star"></i></a><a href="#" class="edit"><i class="far fa-edit"></i></a></div>
             </div>
-            <div class="detailContent"></div>
+            <div class="detailContent d-flex">
+              <div class="date"><i class="far fa-calendar-alt"></i><span>6/11</span></div>
+              <div class="file"><i class="far fa-file"></i></div>
+              <div class="comments"><i class="far fa-comment-dots"></i></div>
+            </div>
           </div>
-          <div class="item"></div>
+          <div class="item">
+            <div class="titleContent d-flex justify-content-between align-items-center">
+              <input type="checkbox" id="todo3">
+              <label for="todo3" class="title">
+                <div class="checked"></div><span>The F2E Week2 - ????</span>
+              </label>
+              <div class="event d-flex"><a href="#" class="star"><i class="far fa-star"></i></a><a href="#" class="edit"><i class="far fa-edit"></i></a></div>
+            </div>
+            <div class="detailContent d-flex">
+              <div class="date"><i class="far fa-calendar-alt"></i><span>6/18</span></div>
+              <div class="file"></div>
+              <div class="comments"></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="titleContent d-flex justify-content-between align-items-center">
+              <input type="checkbox" id="todo4">
+              <label for="todo4" class="title">
+                <div class="checked"></div><span>The F2E Week3 - ????</span>
+              </label>
+              <div class="event d-flex"><a href="#" class="star"><i class="far fa-star"></i></a><a href="#" class="edit"><i class="far fa-edit"></i></a></div>
+            </div>
+            <div class="detailContent d-flex">
+              <div class="date"><i class="far fa-calendar-alt"></i><span>6/25</span></div>
+              <div class="file"></div>
+              <div class="comments"></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="titleContent d-flex justify-content-between align-items-center">
+              <input type="checkbox" id="todo5">
+              <label for="todo5" class="title">
+                <div class="checked"></div><span>The F2E Week4 - ????</span>
+              </label>
+              <div class="event d-flex"><a href="#" class="star"><i class="far fa-star"></i></a><a href="#" class="edit"><i class="far fa-edit"></i></a></div>
+            </div>
+            <div class="detailContent d-flex">
+              <div class="date"><i class="far fa-calendar-alt"></i><span>7/1</span></div>
+              <div class="file"></div>
+              <div class="comments"></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="titleContent d-flex justify-content-between align-items-center">
+              <input type="checkbox" id="todo6">
+              <label for="todo6" class="title">
+                <div class="checked"></div><span>The F2E Week5 - ????</span>
+              </label>
+              <div class="event d-flex"><a href="#" class="star"><i class="far fa-star"></i></a><a href="#" class="edit"><i class="far fa-edit"></i></a></div>
+            </div>
+            <div class="detailContent d-flex">
+              <div class="date"><i class="far fa-calendar-alt"></i><span>7/8</span></div>
+              <div class="file"></div>
+              <div class="comments"></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="titleContent d-flex justify-content-between align-items-center">
+              <input type="checkbox" id="todo7">
+              <label for="todo7" class="title">
+                <div class="checked"></div><span>The F2E Week6 - ????</span>
+              </label>
+              <div class="event d-flex"><a href="#" class="star"><i class="far fa-star"></i></a><a href="#" class="edit"><i class="far fa-edit"></i></a></div>
+            </div>
+            <div class="detailContent d-flex">
+              <div class="date"><i class="far fa-calendar-alt"></i><span>7/15</span></div>
+              <div class="file"></div>
+              <div class="comments"></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="titleContent d-flex justify-content-between align-items-center">
+              <input type="checkbox" id="todo8">
+              <label for="todo8" class="title">
+                <div class="checked"></div><span>The F2E Week7 - ????</span>
+              </label>
+              <div class="event d-flex"><a href="#" class="star"><i class="far fa-star"></i></a><a href="#" class="edit"><i class="far fa-edit"></i></a></div>
+            </div>
+            <div class="detailContent d-flex">
+              <div class="date"><i class="far fa-calendar-alt"></i><span>7/22</span></div>
+              <div class="file"></div>
+              <div class="comments"></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="titleContent d-flex justify-content-between align-items-center">
+              <input type="checkbox" id="todo9">
+              <label for="todo9" class="title">
+                <div class="checked"></div><span>The F2E Week8 - ????</span>
+              </label>
+              <div class="event d-flex"><a href="#" class="star"><i class="far fa-star"></i></a><a href="#" class="edit"><i class="far fa-edit"></i></a></div>
+            </div>
+            <div class="detailContent d-flex">
+              <div class="date"><i class="far fa-calendar-alt"></i><span>7/29</span></div>
+              <div class="file"></div>
+              <div class="comments"></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="titleContent d-flex justify-content-between align-items-center">
+              <input type="checkbox" id="todo10">
+              <label for="todo10" class="title">
+                <div class="checked"></div><span>The F2E Week9 - ????</span>
+              </label>
+              <div class="event d-flex"><a href="#" class="star"><i class="far fa-star"></i></a><a href="#" class="edit"><i class="far fa-edit"></i></a></div>
+            </div>
+            <div class="detailContent d-flex">
+              <div class="date"><i class="far fa-calendar-alt"></i><span>8/5</span></div>
+              <div class="file"></div>
+              <div class="comments"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
