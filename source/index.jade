@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title TodoList
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    //- link(href="images/favicon.ico" rel="shortcut icon")
+    meta(charset="UTF-8")
+    link(rel="stylesheet", href="stylesheets/all.css")
+  body
+    header#header
+      .todo_container.d-flex
+        .col.active.sort My Tasks
+        .col.sort In Progress
+        .col.sort Completed
+
+    .content
+      .todo_container
+        .add_todo
+          input(type="text" placeholder="＋ Add Task")
+
+        .items
+          .item
+            .titleContent.d-flex.justify-content-between
+              input(type="checkbox" id="todo")
+              label(for="todo").title
+                .checked
+                span The F2E Week1 - TodoList
+              .event
+                span icons放這
+            .detailContent
+          .item
