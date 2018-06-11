@@ -4461,7 +4461,7 @@ button.bg-dark:focus {
   background-color: #1d2124 !important; }
 
 .bg-white {
-  background-color: #fff !important; }
+  background-color: #FFFFFF !important; }
 
 .bg-transparent {
   background-color: transparent !important; }
@@ -4521,7 +4521,7 @@ button.bg-dark:focus {
   border-color: #343a40 !important; }
 
 .border-white {
-  border-color: #fff !important; }
+  border-color: #FFFFFF !important; }
 
 .rounded {
   border-radius: 0.25rem !important; }
