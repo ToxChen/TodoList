@@ -1,16 +1,3 @@
-//Color Ticket
-$blue: #4A90E2
-$dark_blue: #00408B
-$grey: #E1E1E1
-$light_grey: #F2F2F2
-$medium_grey: #C8C8C8
-$dark_grey: #757575
-$yellow: #FFF2DC
-$dark_yellow: #F5A623
-$white: #FFFFFF
-$black: #000000
-$red: #D0021B
-
 // Golbel
 *
   position: relative
@@ -21,13 +8,13 @@ a
     text-decoration: none
 
 ::placeholder
-  color: $medium_grey
+  color: $custom_medium-grey
   
 html,body
   margin: 0
   padding: 0
   font-family: Roboto, sans-serif
-  background-color: $grey
+  background-color: $custom_grey
 
 .todo_container
   max-width: 620px
@@ -35,21 +22,21 @@ html,body
 
 //Header
 header
-  background-color: $custom_primary
+  background-color: $custom_blue
   .sort
     font-weight: 400
     font-size: 24px
-    color: $dark_blue
+    color: $custom_dark-blue
     height: 76px
     line-height: 76px
     text-align: center
     cursor: pointer
     &:hover
-      background-color: $dark_blue
+      background-color: $custom_dark-blue
       color: $white
   .sort.active
     color: $white
-    border-bottom: 5px solid $dark_blue
+    border-bottom: 5px solid $custom_dark-blue
 
 //Content
 .content
@@ -59,18 +46,18 @@ header
       width: 100%
       height: 65px
       font-size: 24px
-      color: $dark_grey
+      color: $custom_dark-grey
       padding-left: 24px
       background: #FFFFFF
-      border: 2px solid $medium_grey
+      border: 2px solid $custom_medium-grey
       border-radius: 5px
       outline: none
       &:focus
-        border: 2px solid $blue
+        border: 2px solid $custom_blue
 
   .items
     .item
-      background-color: $light_grey
+      background-color: $custom_light-grey
       margin-bottom: 8px
       padding: 24px 32px 24px 72px
       border-radius: 5px
@@ -92,7 +79,7 @@ header
           background-color: $white
           border: none
         input[type="checkbox"]:checked + label .checked
-          background-color: $blue
+          background-color: $custom_blue
 
         .title
           font-size: 24px
@@ -116,7 +103,7 @@ header
             margin-right: 32px
 
       .detailContent
-        color: $dark_grey
+        color: $custom_dark-grey
         .date
           i
             margin-right: 8px
@@ -142,7 +129,7 @@ header
         .add_file
           width: 32px
           height: 32px
-          background-color: $medium_grey
+          background-color: $custom_medium-grey
           border-radius: 2px
           &:before, &:after
             content: ""
@@ -163,7 +150,7 @@ header
           height: 35px
           border-radius: 2px
           padding: 0 16px
-          color: $medium_grey
+          color: $custom_medium-grey
           border: 1px solid transparent
         input[type="date"]
           margin-right: 8px
@@ -177,7 +164,7 @@ header
           border: 1px solid transparent
         input,textarea
           &:focus
-            border: 1px solid $blue
+            border: 1px solid $custom_blue
 
       .btnContent
 
@@ -188,7 +175,7 @@ header
           line-height: 60px
 
         .cancel
-          color: $red
+          color: $custom_red
           background-color: $white
           span
             padding-left: 28px
@@ -200,17 +187,17 @@ header
               transform: translateY(-50%)
               width: 16px
               height: 2px
-              background-color: $red
+              background-color: $custom_red
             &:before
               transform: rotate(-45deg)
             &:after
               transform: rotate(45deg)
           &:hover
-            background-color: $medium_grey
+            background-color: $custom_medium-grey
 
         .add
           color: $white
-          background-color: $blue
+          background-color: $custom_blue
           span
             padding-left: 28px
             &:before, &:after
@@ -225,22 +212,22 @@ header
             &:before
               transform: rotate(-90deg)
           &:hover
-            background-color: $dark_blue
+            background-color: $custom_dark-blue
 
     .item.important
-      background-color: $yellow
+      background-color: $custom_yellow
       .titleContent
         .event
           .star
-            color: $dark_yellow
+            color: $custom_dark-yellow
 
     .add_item
       margin-bottom: 24px
       padding: 0
-      box-shadow: 0 4px 4px 0 $medium_grey
+      box-shadow: 0 4px 4px 0 $custom_medium-grey
       .titleContent
         padding: 24px 32px 24px 72px
-        border-bottom: 2px solid $medium_grey
+        border-bottom: 2px solid $custom_medium-grey
         margin-bottom: 0
       .addContent
         padding: 24px 78px 24px 72px
