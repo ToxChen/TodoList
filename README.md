@@ -1,22 +1,15 @@
-# 六角學院 Gulp 範例
+#The F2E - 前端修鍊精神時光屋(前端設計師)
 
-## 安裝環境
+##Week1 - Todolist
 
-本範例是使用 `gulp 3.9.1`，另有使用 Bower 載入前端套件。
+DEMO : https://toxchen.github.io/TodoList/
+UI設計稿 : https://drive.google.com/open?id=1lcgaRBAogOPQhGDhtLqR5i4I7Gdt-cMC
+主要練習技術:UI Design、Web Layout、Flexbox
 
-```
-npm install gulp -g
-npm install bower -g
-```
+##Week2 - Filter
 
-## 執行
+DEMO : https://toxchen.github.io/Filter/
+UI設計稿 : https://drive.google.com/open?id=1p1ekCDOCmWNgNvpTKMHSCvi_5qUqFU0z
+主要練習技術:UI Design、RWD、Flexbox
 
-請依序執行以下指令來執行 gulp。
-
-```
-npm install
-bower install
-gulp
-```
-
-[範例網站](https://hexschool.github.io/gulp-demo/)。
+##Week3 - Admin order
